@@ -1,0 +1,74 @@
+.fade:not(.show){opacity:100}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+a {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.home {
+  left: 50%;
+  margin: 0 auto;
+  max-width: 24rem;
+  min-width: 22rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-photo {
+  background: center / contain no-repeat url(/static/img/profile-photo.jpg);
+  border-radius: 3.5rem;
+  height: 7rem;
+  margin: 0 auto;
+  width: 7rem;
+}
+
+.profile-heading h1 {
+  font-variant: small-caps;
+}
+
+.profile-heading h2 {
+  font-size: 1rem;
+}
+
+.logo {
+  background: center / contain no-repeat;
+  display: block;
+  height: 36px;
+  opacity: .8;
+  overflow: hidden;
+  text-indent: -10000px;
+  width: 36px;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.logo.github {
+  background-image: url(/static/img/logos/github.svg);
+}
+
+.logo.linkedin {
+  background-image: url(/static/img/logos/linkedin.svg);
+}
+
+.logo.angellist {
+  background-image: url(/static/img/logos/angellist.svg);
+}
+
+.logo.twitter {
+  background-image: url(/static/img/logos/twitter.svg);
+}
+
+.pgpkey {
+  color: #444;
+  display: inline-block;
+  margin: 1rem;
+}

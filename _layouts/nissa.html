@@ -1,0 +1,46 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    {% include google-analytics.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }} - {% endif %}Nissa Szabo</title>
+    <link href="https://fonts.googleapis.com/css?family=Lusitana:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+      href="{{ "/static/css/bootstrap.materia.min.css" | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/static/css/custom.css" | relative_url }}">
+    <link href="{{ "/static/css/main.css" | relative_url }}" rel="stylesheet">
+    <link href="{{ "/static/css/nissa.css" | relative_url }}" rel="stylesheet">
+    <meta name="author" content="Nissa Szabo">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% include favicon.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container my-3">
+      {% if page.hide_home != true %}
+      <div class="row">
+        <div class="col">
+          <a href="{{ "/life" | relative_url }}">
+            <i class="material-icons align-bottom">chevron_left</i> home
+          </a>
+        </div>
+      </div>
+      {% endif %}
+      {{ content }}
+      <footer class="mb-5 small text-right">
+        reductio ad absurdum
+      </footer>
+    </div>
+  </body>
+</html>
